@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer>
       <img src={logo} alt="logo" />
-      <p>Copyright 2024 Little Lemon</p>
+      <p>Copyright {new Date().getFullYear()} Little Lemon</p>
     </footer>
   );
 };
