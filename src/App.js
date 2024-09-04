@@ -1,6 +1,8 @@
 import "./App.css";
 import Header from "./Components/Header";
-import Main from "./Components/Main";
+import Main from "./Page/Main";
+import About from "./Page/About";
+import Menu from "./Page/Menu";
 import Footer from "./Components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ErrorPage from "./Page/error-page";
@@ -19,11 +21,10 @@ function App() {
       element: <HeaderLayout />,
       children: [
         { path: "/", element: <Main /> },
-        { path: "/about", element: <div>about</div> },
-        { path: "/menu", element: <div>menu</div> },
+        { path: "/about", element: <About /> },
+        { path: "/menu", element: <Menu /> },
         { path: "/reservations", element: <div>reservations</div> },
         { path: "/order-online", element: <div>order-online</div> },
-        { path: "/login", element: <div>login</div> },
       ],
       errorElement: <ErrorPage />,
     },

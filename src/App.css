@@ -10,6 +10,10 @@ body {
   margin: 3rem 3rem 2% 2%;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 /****************** Header ********************/
 
 header {
@@ -149,11 +153,12 @@ nav label {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
   justify-items: center;
 }
 
 .preview-menus article {
-  width: 320px;
+  width: 80%;
   border-radius: 1rem;
 }
 
@@ -187,6 +192,26 @@ nav label {
 .menu-card-link {
   font-size: 1.5rem;
   font-weight: 800;
+}
+/****************** About ********************/
+
+.about {
+  background-color: #495e57;
+  border-radius: 1rem;
+  padding: 0 0 1rem 1rem;
+  color: white;
+}
+.aboutTitle {
+  font-size: 4rem;
+}
+
+.aboutSubtitle {
+  font-size: 6rem;
+  color: #f4ce14;
+}
+
+.aboutParagraph {
+  font-size: 3rem;
 }
 
 /****************** Footer ********************/

@@ -1,5 +1,5 @@
-import Hero from "./Hero";
-import Highlights from "./Highlights";
+import Hero from "../Components/Hero";
+import Highlights from "../Components/Highlights";
 
 const Main = () => {
   return (
