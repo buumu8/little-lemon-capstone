@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Main from "./Page/Main";
 import About from "./Page/About";
 import Menu from "./Page/Menu";
+import BookingPage from "./Page/BookingPage";
 import Footer from "./Components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ErrorPage from "./Page/error-page";
@@ -23,7 +24,7 @@ function App() {
         { path: "/", element: <Main /> },
         { path: "/about", element: <About /> },
         { path: "/menu", element: <Menu /> },
-        { path: "/reservations", element: <div>reservations</div> },
+        { path: "/reservations", element: <BookingPage /> },
         { path: "/order-online", element: <div>order-online</div> },
       ],
       errorElement: <ErrorPage />,

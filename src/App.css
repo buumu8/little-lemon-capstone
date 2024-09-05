@@ -214,6 +214,67 @@ nav label {
   font-size: 3rem;
 }
 
+/****************** Booking Form ********************/
+
+.bookingPage {
+  display: flex;
+
+  justify-content: space-around;
+}
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bookingForm-form {
+  font-size: 2rem;
+  display: grid;
+  max-width: 400px;
+  gap: 20px;
+}
+
+.bookingForm-form input {
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: #f4ce14;
+  padding: 1rem;
+}
+
+.bookingForm-form select {
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: #f4ce14;
+  padding: 1rem;
+}
+
+.bookingForm input[type="submit"] {
+  background-color: #495e57;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.bookingForm input[type="submit"]:hover {
+  background-color: black;
+  color: #f4ce14;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.bookingSummary article {
+  font-size: 2rem;
+  background-color: #495e57;
+  color: #f4ce14;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.bookingSummary article span {
+  color: white;
+  font-weight: bold;
+}
+
 /****************** Footer ********************/
 
 footer {
