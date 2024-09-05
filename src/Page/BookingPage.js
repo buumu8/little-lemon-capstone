@@ -1,5 +1,6 @@
 import { useState, useReducer } from "react";
 import BookingForm from "../Components/BookingForm.js";
+import { useNavigate } from "react-router-dom";
 
 const initialTime = ["17:00", "18:00", "19:00", "20:00"];
 
@@ -17,7 +18,7 @@ const BookingPage = () => {
   const [form, setForm] = useState({ date: "2024-01-01", time: "17:00", guests: 1, occasion: "birthday" });
 
   const [availableTimes, dispatch] = useReducer(reducer, initialTime);
-
+  let navigate = useNavigate();
   const handleChange = (e) => {
     const name = e.target.name;
     setForm((prevState) => ({
@@ -36,6 +37,7 @@ const BookingPage = () => {
   const formSubmit = (e) => {
     e.preventDefault();
     alert(`Congratulations! You made a reservation on ${form.date} at ${form.time} for ${form.guests} person(s)`);
+    navigate("/");
   };
   return (
     <section className="bookingPage">

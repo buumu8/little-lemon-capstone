@@ -15,7 +15,7 @@ const MenuCard = (props) => {
           quas unde alias illum nobis ratione odit molestias voluptatibus nihil?
         </p>
 
-        <Link className="menu-card-link" to="/order-online">
+        <Link className="menu-card-link" to={`/order-online/${props.title}`}>
           Order a delivery <FontAwesomeIcon icon={faShoppingCart} />
         </Link>
       </section>
