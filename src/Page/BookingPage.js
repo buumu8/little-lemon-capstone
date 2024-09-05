@@ -39,7 +39,7 @@ const BookingPage = () => {
   };
   return (
     <section className="bookingPage">
-      <BookingForm form handleChange={handleChange} formSubmit={formSubmit} availableTimes={availableTimes} />
+      <BookingForm handleChange={handleChange} formSubmit={formSubmit} availableTimes={availableTimes} />
       <section className="bookingSummary">
         <h1>Summary</h1>
         {form !== undefined ? (

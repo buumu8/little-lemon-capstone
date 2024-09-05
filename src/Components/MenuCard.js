@@ -6,7 +6,7 @@ const MenuCard = (props) => {
     <article className="menu-card">
       <img src={props.image} alt={props.title} />
       <section className="menu-card-text">
-        <h1 class="menu-card-text-title">
+        <h1 className="menu-card-text-title">
           {props.title}
           <span>$ {props.price}</span>
         </h1>
